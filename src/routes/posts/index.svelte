@@ -21,6 +21,7 @@
 <svelte:head>
   <title>Portfolio | Blog</title>
 </svelte:head>
+
 <h1 class="text-4xl mb-10 font-extrabold">Blog posts</h1>
 
 {#each posts as { title, slug, content, coverImage, tags }}
