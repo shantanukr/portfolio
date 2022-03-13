@@ -1,20 +1,17 @@
 <script context="module">
   import { client } from '$lib/graphql-client'
-  import { authorsQuery, projectsQuery } from '$lib/graphql-queries'
+  import { authorsQuery } from '$lib/graphql-queries'
 
   export const load = async () => {
 
-    const [authorReq, projectsReq] = await Promise.all([
-      client.request(authorsQuery),
-      client.request(projectsQuery),
+    const [authorReq] = await Promise.all([
+      client.request(authorsQuery)
     ])
 
     const { authors } = authorReq
-    const { projects } = projectsReq
 
     return {
       props: {
-        projects,
         authors,
       },
     }
@@ -23,7 +20,6 @@
 
 
 <script>
-  export let projects
   export let authors
 </script>
 
@@ -43,6 +39,6 @@
 {/each}
 
 <div>
-  <button class="btn btn-outline btn-primary mr-10">My Projects</button>
-  <button class="btn btn-outline btn-primary">Contact Me</button>
+  <a class="btn btn-outline btn-primary mr-10" href="/projects">My projects</a>
+  <a class="btn btn-outline btn-primary mr-10" href="/contacts">Contact Me</a>
 </div>
