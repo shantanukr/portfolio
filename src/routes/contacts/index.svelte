@@ -50,21 +50,21 @@
 <div class="avatar m-3 ">
   <div class="w-20 rounded-full bg-white">
     <a href="https://github.com/shantanukr">
-        <img src="/assets/icons/github.svg" alt="My Github" />
+        <img src="https://www.svgrepo.com/show/343674/github.svg" alt="My Github" />
     </a>
   </div>
 </div>
 <div class="avatar m-3">
   <div class="w-20 rounded-full bg-white">
     <a href="https://dev.to/shantanukr">
-        <img src="/assets/icons/devto.svg" alt="My dev.to profile"/>
+        <img src="https://www.svgrepo.com/show/349334/dev-to.svg" alt="My dev.to profile"/>
     </a>
   </div>
 </div>
 <div class="avatar m-3">
   <div class="w-20 rounded-full bg-white">
     <a href="https://www.linkedin.com/in/shantanu-481b761b6">
-        <img src="/assets/icons/linkedin.svg" alt="My LinkedIn" />
+        <img src="https://www.svgrepo.com/show/128403/linkedin.svg" alt="My LinkedIn" />
     </a>
   </div>
 </div>
